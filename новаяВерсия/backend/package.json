@@ -1,0 +1,25 @@
+{
+  "name": "transcendance-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "start": "node dist/src/server.js",
+    "dev": "ts-node src/server.ts",
+    "lint": "tsc --noEmit --project tsconfig.json"
+  },
+  "dependencies": {
+    "fastify": "^5.1.0",
+    "@fastify/cors": "^10.0.0",
+    "@fastify/static": "^8.0.0",
+    "better-sqlite3": "^9.4.0",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.11.22",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
